@@ -1,0 +1,21 @@
+<?php
+if (empty($revision)) {
+    throw new \Exception('no $revision');
+}
+
+if (empty($assetsHost)) {
+    throw new \Exception('no $assetsHost');
+}
+
+if (is_null($isDevelopment)) {
+    throw new \Exception('no $isDevelopment');
+}
+
+if ($isDevelopment) {
+    echo '<script type="application/javascript" src="' . $assetsHost . '/webpack-dev-server.js?' . $revision . '"></script>' . "\n";
+    //echo '<script type="application/javascript" src="' . $assetsHost . '/vendor.js?' . $revision . '"></script>' . "\n";
+    echo '<script type="application/javascript" src="' . $assetsHost . '/app.js?' . $revision . '"></script>' . "\n";
+} else {
+    //echo '<script type="application/javascript" src="' . $assetsHost . '/vendor.js?' . $revision . '"></script>' . "\n";
+    echo '<script type="application/javascript" src="' . $assetsHost . '/app.js?' . $revision . '"></script>' . "\n";
+}

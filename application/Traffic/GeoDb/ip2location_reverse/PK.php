@@ -1,0 +1,11 @@
+<?php
+ return array (
+  'Azad Kashmir' => 'JK',
+  'Balochistan' => 'BA',
+  'Federally Administered Tribal Areas' => 'TA',
+  'Gilgit-Baltistan' => 'GB',
+  'Islamabad' => 'IS',
+  'Khyber Pakhtunkhwa' => 'KP',
+  'Punjab' => 'PB',
+  'Sindh' => 'SD',
+);

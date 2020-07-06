@@ -1,0 +1,13 @@
+<?php
+ return array (
+  'Bulawayo' => 'BU',
+  'Harare' => 'HA',
+  'Manicaland' => 'MA',
+  'Mashonaland Central' => 'MC',
+  'Mashonaland East' => 'ME',
+  'Mashonaland West' => 'MW',
+  'Masvingo' => 'MV',
+  'Matabeleland North' => 'MN',
+  'Matabeleland South' => 'MS',
+  'Midlands' => 'MI',
+);

@@ -1,0 +1,19 @@
+<p><?php echo $message?></p>
+
+<p id="ip">Server IP: <strong><?php echo $ip ?></strong></p>
+<p id="ip">Server Time: <?php echo date('Y-m-d H:i') ?></p>
+<?php echo $enterKeyText; ?>:
+<p>
+<form action="?" onsubmit="if (!this.checkValidity()){ return false} return true;">
+    <input class="form-control"
+            type="text"
+            pattern="[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}"
+            placeholder="XXXX-XXXX-XXXX-XXXX"
+            name="licenseKey"
+            style="display:block;width:100%;margin:10px 10px 10px 0;"
+            required
+        >
+        <input type="hidden" name="object" value="system.changeLicenseKey">
+        <button class="btn btn-default"><?php echo $saveText; ?></button>
+    </form>
+</p>

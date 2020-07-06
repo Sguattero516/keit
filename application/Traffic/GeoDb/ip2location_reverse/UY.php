@@ -1,0 +1,22 @@
+<?php
+ return array (
+  'Artigas' => 'AR',
+  'Canelones' => 'CA',
+  'Cerro Largo' => 'CL',
+  'Colonia' => 'CO',
+  'Durazno' => 'DU',
+  'Flores' => 'FS',
+  'Florida' => 'FD',
+  'Lavalleja' => 'LA',
+  'Maldonado' => 'MA',
+  'Montevideo' => 'MO',
+  'Paysandu' => 'PA',
+  'Rio Negro' => 'RN',
+  'Rivera' => 'RV',
+  'Rocha' => 'RO',
+  'Salto' => 'SA',
+  'San Jose' => 'SJ',
+  'Soriano' => 'SO',
+  'Tacuarembo' => 'TA',
+  'Treinta y Tres' => 'TT',
+);

@@ -1,0 +1,21 @@
+<?php
+ return array (
+  'Alto Paraguay' => '16',
+  'Alto Parana' => '10',
+  'Amambay' => '13',
+  'Asuncion' => 'ASU',
+  'Boqueron' => '19',
+  'Caaguazu' => '05',
+  'Caazapa' => '06',
+  'Canindeyu' => '14',
+  'Central' => '11',
+  'Concepcion' => '01',
+  'Cordillera' => '03',
+  'Guaira' => '04',
+  'Itapua' => '07',
+  'Misiones' => '08',
+  'Neembucu' => '12',
+  'Paraguari' => '09',
+  'Presidente Hayes' => '15',
+  'San Pedro' => '02',
+);

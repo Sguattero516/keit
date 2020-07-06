@@ -1,0 +1,39 @@
+<?php
+if (empty($title)) {
+    throw new \Exception('no $title');
+}
+if (is_null($isProduction)) {
+    throw new \Exception('no $isProduction');
+}
+if (empty($revision)) {
+    throw new \Exception('no $revision');
+}
+if (empty($revision)) {
+    throw new \Exception('no $revision');
+}
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title><?php echo $title ?></title>
+    <?php include 'shared/_head.phtml' ?>
+    <?php
+    if ($isProduction) {
+        echo '<link href="assets/app.css?' . $revision . '" media="screen" rel="stylesheet" type="text/css" />';
+    }
+    ?>
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-5 col-md-offset-2 error-block <?php echo (isset($alert)) ? $alert : '' ?>">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <?php echo is_array($content) ? json_encode($content) : $content ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="application/javascript">var kData = {}; var kTranslations = {}</script>
+    <?php include 'shared/_footer.phtml' ?>
+</body>
+</html>

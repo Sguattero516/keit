@@ -1,0 +1,38 @@
+<?php
+if (is_null($isProduction)) {
+    throw new \Exception('no $isProduction');
+}
+if (empty($revision)) {
+    throw new \Exception('no $revision');
+}
+if (empty($translations)) {
+    throw new \Exception('no $translations');
+}
+if (empty($kData)) {
+    throw new \Exception('no $kData');
+}
+?>
+<!doctype html>
+<html ng-app="app" ng-strict-di>
+  <head>
+    <title app-page-title></title>
+
+    <?php include 'shared/_head.phtml' ?>
+    <?php
+    if ($isProduction) {
+        echo '<link href="assets/app.css?' . $revision . '" media="screen" rel="stylesheet" type="text/css" />';
+    }
+    ?>
+  </head>
+  <body>
+
+    <layout class="wrapper"></layout>
+
+    <script type="application/javascript">
+        var kData = <?php echo json_encode($kData)?>;
+        var kTranslations = <?php echo json_encode($translations) ?>;
+    </script>
+
+    <?php include 'shared/_footer.phtml' ?>
+  </body>
+</html>

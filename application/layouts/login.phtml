@@ -1,0 +1,54 @@
+<?php
+if (empty($translations)) {
+    throw new \Exception('no $translations');
+}
+if (empty($assetsHost)) {
+    throw new \Exception('no $assetsHost');
+}
+if (empty($revision)) {
+    throw new \Exception('no $revision');
+}
+if (is_null($isDevelopment)) {
+    throw new \Exception('no $isDevelopment');
+}
+if (is_null($isProduction)) {
+    throw new \Exception('no $isProduction');
+}
+if (empty($title)) {
+    throw new \Exception('no $title');
+}
+?>
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <title><?php echo $title ?></title>
+        <?php include 'shared/_head.phtml' ?>
+        <?php
+        if ($isProduction) {
+            echo '<link href="assets/login.css?' . $revision . '" media="screen" rel="stylesheet" type="text/css" />';
+        }
+        ?>
+    </head>
+    <body class="login">
+        <app-login
+            class="login-block"
+            login="'<?php echo htmlentities($login) ?>'"
+            password="'<?php echo htmlentities($password)?>'"
+            >
+        </app-login>
+
+        <script type="application/javascript">
+            var kData = {};
+            var kTranslations = <?php echo json_encode($translations) ?>;
+        </script>
+
+        <?php
+        if ($isDevelopment) {
+            echo '<script type="application/javascript" src="' . $assetsHost . '/webpack-dev-server.js' . '?' . $revision . '"></script>' . "\n";
+            echo '<script type="application/javascript" src="' . $assetsHost . '/login.js' . '?' . $revision . '"></script>' . "\n";
+        } else {
+            echo '<script type="application/javascript" src="assets/login.js' . '?' . $revision . '"></script>' . "\n";
+        }
+        ?>
+    </body>
+</html>

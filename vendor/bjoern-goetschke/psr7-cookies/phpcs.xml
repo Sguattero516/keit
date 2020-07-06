@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ruleset>
+
+    <!--
+        check all files in project directory
+    -->
+    <file>.</file>
+
+    <!--
+        based on coding standard "BjoernGoetschke"
+    -->
+    <rule ref="vendor/bjoern-goetschke/coding-standards/standards/BjoernGoetschke/" />
+
+    <!--
+        do not check third party code
+    -->
+    <exclude-pattern>vendor/</exclude-pattern>
+
+</ruleset>

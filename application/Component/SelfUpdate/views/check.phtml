@@ -1,0 +1,26 @@
+<h2 class="margin-bottom-20 margin-top-0"><?php echo $title ?></h2>
+
+<?php echo $content; ?>
+
+<?php if ($criticalError): ?>
+
+    <div class="text-center margin-top-20">
+        <?php echo $critical_errors; ?>
+        <a class="btn btn-default" href="?object=selfUpdates.check"><?php echo $recheck; ?></a>
+    </div>
+
+<?php else: ?>
+    <div class="text-center margin-top-20">
+        <p>
+            <a class="btn btn-default btn-success" href="?#!/self_update/"><?php echo $continue; ?></a>
+        </p>
+        <p class="text-small">
+        <?php echo $redirect; ?>
+            <script type="text/javascript">
+                setTimeout(function () {
+                    window.location.href = "?#!/self_update/";
+                }, 5000);
+            </script>
+        </p>
+    </div>
+<?php endif; ?>

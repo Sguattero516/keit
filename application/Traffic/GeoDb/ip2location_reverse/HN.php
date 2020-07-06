@@ -1,0 +1,21 @@
+<?php
+ return array (
+  'Atlantida' => 'AT',
+  'Choluteca' => 'CH',
+  'Colon' => 'CL',
+  'Comayagua' => 'CM',
+  'Copan' => 'CP',
+  'Cortes' => 'CR',
+  'El Paraiso' => 'EP',
+  'Francisco Morazan' => 'FM',
+  'Gracias a Dios' => 'GD',
+  'Intibuca' => 'IN',
+  'Islas de la Bahia' => 'IB',
+  'La Paz' => 'LP',
+  'Lempira' => 'LE',
+  'Ocotepeque' => 'OC',
+  'Olancho' => 'OL',
+  'Santa Barbara' => 'SB',
+  'Valle' => 'VA',
+  'Yoro' => 'YO',
+);

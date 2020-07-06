@@ -1,0 +1,21 @@
+<?php
+ return array (
+  'Bengo' => 'BGO',
+  'Benguela' => 'BGU',
+  'Bie' => 'BIE',
+  'Cabinda' => 'CAB',
+  'Cunene' => 'CNN',
+  'Huambo' => 'HUA',
+  'Huila' => 'HUI',
+  'Kuando Kubango' => 'CCU',
+  'Kwanza Norte' => 'CNO',
+  'Kwanza Sul' => 'CUS',
+  'Luanda' => 'LUA',
+  'Lunda Norte' => 'LNO',
+  'Lunda Sul' => 'LSU',
+  'Malange' => 'MAL',
+  'Moxico' => 'MOX',
+  'Namibe' => 'NAM',
+  'Uige' => 'UIG',
+  'Zaire' => 'ZAI',
+);

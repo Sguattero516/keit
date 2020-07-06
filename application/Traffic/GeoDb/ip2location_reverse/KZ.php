@@ -1,0 +1,20 @@
+<?php
+ return array (
+  'Almaty' => 'ALA',
+  'Almaty oblysy' => 'ALM',
+  'Aqmola oblysy' => 'AKM',
+  'Aqtobe oblysy' => 'AKT',
+  'Astana' => 'AST',
+  'Atyrau oblysy' => 'ATY',
+  'Batys Qazaqstan oblysy' => 'ZAP',
+  'Bayqongyr' => 'BAY',
+  'Mangghystau oblysy' => 'MAN',
+  'Ongtustik Qazaqstan oblysy' => 'YUZ',
+  'Pavlodar oblysy' => 'PAV',
+  'Qaraghandy oblysy' => 'KAR',
+  'Qostanay oblysy' => 'KUS',
+  'Qyzylorda oblysy' => 'KZY',
+  'Shyghys Qazaqstan oblysy' => 'VOS',
+  'Soltustik Qazaqstan oblysy' => 'SEV',
+  'Zhambyl oblysy' => 'ZHA',
+);

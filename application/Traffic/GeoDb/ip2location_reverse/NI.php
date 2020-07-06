@@ -1,0 +1,20 @@
+<?php
+ return array (
+  'Atlantico Norte' => 'AN',
+  'Atlantico Sur' => 'AS',
+  'Boaco' => 'BO',
+  'Carazo' => 'CA',
+  'Chinandega' => 'CI',
+  'Chontales' => 'CO',
+  'Esteli' => 'ES',
+  'Granada' => 'GR',
+  'Jinotega' => 'JI',
+  'Leon' => 'LE',
+  'Madriz' => 'MD',
+  'Managua' => 'MN',
+  'Masaya' => 'MS',
+  'Matagalpa' => 'MT',
+  'Nueva Segovia' => 'NS',
+  'Rio San Juan' => 'SJ',
+  'Rivas' => 'RI',
+);
